@@ -18,17 +18,41 @@
             text-align: center;
         }
 .menu-pegajoso {
-  /* La propiedad mágica: */
-  position: sticky;
-  
-  /* Le dice dónde debe "pegarse" cuando llegue a ese punto */
-  top: 0;
+      position: sticky;
+      top: 0;
+      background-color: #1e1e1e;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
 
-  /* También necesita un fondo para que no sea transparente al pegarse */
-  background-color: #333;
-  width: 100%;
-  z-index: 1000;
-}
+    .menu-pegajoso ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .menu-pegajoso li {
+      margin: 0 1.5em;
+    }
+
+    .menu-pegajoso a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .menu-pegajoso a:hover {
+      color: #00bcd4;
+    }
+
+    /* Para mostrar que el menú se queda fijo */
+    section {
+      padding: 100px;
+      height: 600px;
+    }
         /* Título principal */
         h1 {
             font-size: 3em;
@@ -81,10 +105,12 @@
     <p>Bienvenido, ¿qué deseas explorar hoy?</p>
 
      <nav class="menu-pegajoso">
-  <a href="Introduccion.html">Introduccion</a>
-  <a href="Tema1.html">Realidad Virtual y Realidad Aumentada</a>
-  <a href="Tema2.html">Inteligencia Artificial y Automatizacion</a>
-  <a href="Referencias.html">Referencias</a>
+         <ul>
+<li>  <a href="Introduccion.html">Introduccion</a></li>
+ <li> <a href="Tema1.html">Realidad Virtual y Realidad Aumentada</a></li>
+  <li><a href="Tema2.html">Inteligencia Artificial y Automatizacion</a></li>
+ <li> <a href="Referencias.html">Referencias</a></li>
+         </ul>
 </nav>
 
     <footer>
@@ -92,5 +118,6 @@
     </footer>
 </body>
 </html>
+
 
 
