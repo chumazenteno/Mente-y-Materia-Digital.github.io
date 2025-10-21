@@ -17,7 +17,18 @@
             text-align: center;
             padding: 30px 0;
         }
+.menu-pegajoso {
+  /* La propiedad mágica: */
+  position: sticky;
+  
+  /* Le dice dónde debe "pegarse" cuando llegue a ese punto */
+  top: 0;
 
+  /* También necesita un fondo para que no sea transparente al pegarse */
+  background-color: #333;
+  width: 100%;
+  z-index: 1000;
+}
         h1 {
             font-size: 2.5em;
             margin-bottom: 0.2em;
@@ -116,3 +127,4 @@
     </footer>
 </body>
 </html>
+
