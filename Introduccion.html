@@ -23,7 +23,18 @@
             margin-bottom: 0.2em;
             color: #0d3b66;
         }
+.menu-pegajoso {
+  /* La propiedad mágica: */
+  position: sticky;
+  
+  /* Le dice dónde debe "pegarse" cuando llegue a ese punto */
+  top: 0;
 
+  /* También necesita un fondo para que no sea transparente al pegarse */
+  background-color: #333;
+  width: 100%;
+  z-index: 1000;
+}
         h2 {
             color: #1d3557;
             margin-top: 30px;
@@ -72,6 +83,12 @@
     </style>
 </head>
 <body>
+    <nav class="menu-pegajoso">
+  <a href="Index.html">Inicio</a>
+  <a href="Tema1.html">Realidad Virtual y Realidad Aumentada</a>
+  <a href="Tema2.html">Inteligencia Artificial y Automatizacion</a>
+  <a href="Referencias.html">Referencias</a>
+</nav>
     <header>
         <h1>Introduccion de IA y Realidad Virtual y Realidad Aumentada</h1>
         <p></p>
@@ -98,4 +115,5 @@ tecnologías en dispositivos cotidianos, lo que promete ampliar aún más su imp
         &copy; 2025 Mente y Materia Digital
     </footer>
 </body>
+
 </html>
