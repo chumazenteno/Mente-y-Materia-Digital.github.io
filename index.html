@@ -17,7 +17,18 @@
             margin: 0;
             text-align: center;
         }
+.menu-pegajoso {
+  /* La propiedad mágica: */
+  position: sticky;
+  
+  /* Le dice dónde debe "pegarse" cuando llegue a ese punto */
+  top: 0;
 
+  /* También necesita un fondo para que no sea transparente al pegarse */
+  background-color: #333;
+  width: 100%;
+  z-index: 1000;
+}
         /* Título principal */
         h1 {
             font-size: 3em;
@@ -69,16 +80,17 @@
     <h1>Mente y Materia Digital</h1>
     <p>Bienvenido, ¿qué deseas explorar hoy?</p>
 
-    <div class="menu">
-        <a href="Introduccion.html"><button>Introducción</button></a>
-        <a href="Tema1.html"><button>Realidad virtual y Realidad Aumentada</button></a>
-        <a href="Tema2.html"><button>Inteligencia Artificial y Automatización</button></a>
-        <a href="Referencias.html"><button>Referencias</button></a>
-    </div>
+     <nav class="menu-pegajoso">
+  <a href="Introduccion.html">Introduccion</a>
+  <a href="Tema1.html">Realidad Virtual y Realidad Aumentada</a>
+  <a href="Tema2.html">Inteligencia Artificial y Automatizacion</a>
+  <a href="Referencias.html">Referencias</a>
+</nav>
 
     <footer>
         &copy; 2025 Mente y Materia Digital
     </footer>
 </body>
 </html>
+
 
