@@ -17,6 +17,18 @@
             text-align: center;
             padding: 30px 0;
         }
+        .menu-pegajoso {
+  /* La propiedad mágica: */
+  position: sticky;
+  
+  /* Le dice dónde debe "pegarse" cuando llegue a ese punto */
+  top: 0;
+
+  /* También necesita un fondo para que no sea transparente al pegarse */
+  background-color: #333;
+  width: 100%;
+  z-index: 1000;
+}
 
         h1 {
             font-size: 2.5em;
@@ -69,6 +81,12 @@
 </head>
 <body>
     <header>
+         <nav class="menu-pegajoso">
+  <a href="index.html">Inicio</a>
+  <a href="Introduccion.html">Introduccion</a>
+  <a href="Tema2.html">Inteligencia Artificial y Automatizacion</a>
+  <a href="Referencias.html">Referencias</a>
+</nav>
         <h1>Tema 1: Realidad Virtual (VR) y Realidad Aumentada (RA)</h1>
         <p>Explora los conceptos, aplicaciones y diferencias entre Realidad Virtual (VR) y Realidad Aumentada (RA).</p>
     </header>
@@ -138,3 +156,4 @@ Contrasta los tres conceptos —realidad virtual, realidad aumentada y realidad 
     </div>
 </body>
 </html>
+
